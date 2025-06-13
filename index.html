@@ -3,13 +3,11 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
   <meta charset="UTF-8"/>
-  <title>Modelo 3D - Akadimia</title>
+  <title>Modelo 3D - Entrada Academia</title>
 
-  <!-- X3DOM -->
   <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
   <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css"/>
 
-  <!-- Estilos personalizados -->
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +19,7 @@
     }
 
     header {
-      background-color: #2c3e50;
+      background-color: #2e79c4;
       color: white;
       padding: 1rem 0;
     }
@@ -31,7 +29,7 @@
     }
 
     x3d {
-      border: 2px solid #2c3e50;
+      border: 2px solid #2765a3;
       border-radius: 8px;
       background-color: #ffffff;
       margin-top: 1rem;
@@ -47,22 +45,31 @@
 <body>
 
   <header>
-    <h1>Visualización 3D: Akadimia</h1>
+    <h1>Visualización 3D: Entrada Academia</h1>
   </header>
 
   <main>
-    <p>Texto previo</p>
+    <p>M2 T5 Sheida Pourian</p>
+    <p>Modelo simplificado a 15K</p>
 
     <x3d width="800px" height="600px">
       <scene>
-        <!-- Vista frontal centrada -->
+        <!-- Vista frontal perfectamente alineada -->
         <Viewpoint 
           position="0 0 10" 
-          orientation="0 0 0 0" 
+          orientation="0 1 0 0" 
           centerOfRotation="0 0 0" 
           fieldOfView="0.785" 
           description="Vista frontal">
         </Viewpoint>
 
         <!-- Modelo 3D -->
-        <inline url="https://raw.githubusercontent.com/Sheidap/Modelo-X3_Sheida/main/Akadimia_15K.x3d"></i
+        <inline url="https://raw.githubusercontent.com/Sheidap/Modelo-X3_Sheida/main/Akadimia_15K.x3d"></inline>
+      </scene>
+    </x3d>
+
+    <p>Fin de la visualización</p>
+  </main>
+
+</body>
+</html>
