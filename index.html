@@ -1,29 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta http-equiv='X-UA-Compatible' content='chrome=1'/>
-  <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
-  <title>Título pestaña</title>
-  <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script>
-  <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+  <meta charset="UTF-8"/>
+  <title>Modelo 3D - Akadimia</title>
+
+  <!-- X3DOM -->
+  <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css"/>
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    x3d {
+      border: 2px solid #2c3e50;
+      border-radius: 8px;
+      background-color: #ffffff;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Cabecera página</h1>
-  <p>Texto previo</p>
 
-  <x3d width='800px' height='800px'>
-    <scene>
-      <Viewpoint 
-        position='-104.29660 -465.79250 909.11970' 
-        orientation='0.00000 0.00000 0.00000 0.00000' 
-        centerOfRotation='-108.16351 -444.50042 686.48577' 
-        fieldOfView='0.78540' 
-        description='defaultX3DViewpointNode'>
-      </Viewpoint>
-      <inline url='https://raw.githubusercontent.com/Sheidap/Modelo-X3_Sheida/refs/heads/main/Akadimia_15K.x3d'></inline>
-    </scene>
-  </x3d>
+  <header>
+    <h1>Visualización 3D: Akadimia</h1>
+  </header>
 
-  <p>Texto final</p>
-</body>
-</html>
+  <main>
+    <p>Texto previo</p>
+
+    <x3d width="800px" height="600px">
+      <scene>
+        <!-- Vista frontal centrada -->
+        <Viewpoint 
+          position="0 0 10" 
+          orientation="0 0 0 0" 
+          centerOfRotation="0 0 0" 
+          fieldOfView="0.785" 
+          description="Vista frontal">
+        </Viewpoint>
+
+        <!-- Modelo 3D -->
+        <inline url="https://raw.githubusercontent.com/Sheidap/Modelo-X3_Sheida/main/Akadimia_15K.x3d"></i
